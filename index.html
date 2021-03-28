@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="main.css"/>
         <!--Feel free to add more CSS files as needed-->
         <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
     </head>
 <body>
     <div class="header">
@@ -15,13 +16,60 @@
     <!--  We included a basic HTML structure for the 3 graphs here. Feel free to change this if you'd like  -->
     <div class="row">
         <div class="col-lg-6">
-            <div id="graph1"></div>
+            <div style="margin-bottom: 100px" id="graph1"></div>
+            <!-- <center><h3 style="margin-left: 600px">Top 10 Nations by Win Percent</h3></center>  -->
             <div id="graph2"></div><br/>
         </div>
         <div class="col-lg-6">
             <div id="graph3"></div>
+            <center><button type="button" class="btn btn-info" style="background-color: #4b0082; margin-left: 140px" onclick="setData(0, 'pct')">Win Percent</button>
+            <button type="button" class="btn btn-info" style="background-color: #4b0082" onclick="setData(1, 'rpi')">RPI</button></center>
         </div>
     </div>
+    <center><h3 style="margin-left: 20px; margin-right: 20px; font-weight: bold">Written Questions: Graph Descriptions</h3></center>
+        <h4 style="margin-left: 20px; margin-right: 20px">The first graph (in the top left corner) answers the first question, regarding the number of football games by year, by presenting
+            the number of football games for each of the last ten years. 
+            I chose to use a bar graph, where each bar represents a year and the height of each bar represents the number of games. I chose to use the 
+            last ten years of the dataset (excluding 2020, since data was limited), as I felt that would be the most relevant information. By making it height based, it's very easy to compare 
+            the number of games across years. One thing I found quite interesting is that the three years with the fewest number of games were all World Cup years. </h4>
+        <h4 style="margin-left: 20px; margin-right: 20px">The second graph (in the top right corner) answers the third question, regarding the top-performing teams over the last 2 world cups,
+            by displaying the top teams over the last 2 World Cups by two different metrics: Win Percent, and Relative Percentage Index (RPI). Win percent is simply the number of WC wins each
+            team has divided by the number of total WC games they played. RPI is a weighted average, calculated by the following formula: WP*0.25 + OWP*0.5 + OOWP*0.25. OWP refers to the average
+            win percent of a team's opponents, and OOWP refers to the average win percent of a team's opponents' opponents. By accounting for the strength of a team's opponents, we may be able to
+            better understand a team's strength. 
+            I chose to use a bar graph, where each bar represents a team and the length of each bar represents its strength. Bars are ordered by strongest to weakest team, with the strongest team at
+            the top of the graph. I chose to only display the top 10 teams, becasue I felt that teams outside of the top 10 would not be very likely to win a World Cup, and I didn't want the graph to be over-crowded. Given that predicting who will win is tricky, and there 
+            are many ways to define a team's strength, I chose to present two different metrics which can be used to describe a "top team." These metrics can be toggled between based on the buttons below
+            the graph, which dynamically updates. Displaying it as an ordered bar graph makes it easy to see which teams are the best, and how much better they are than the other teams. Based on my results,
+            Belgium has the highest win percentage and France has the highest RPI. Both of these teams seem to be about equally good: Belgium has the second highest RPI, and France has the second highest win 
+            percentage! </h4>
+        <h4 style="margin-left: 20px; margin-right: 20px">The third graph (on the bottom) answers the second question, regarding the teams with the highest win percentages. Win percentage is defined as 
+            number of wins over number of games played, across the entire dataset (so, since 1872). However, win percentages can sometimes be misleading, as some teams have played very few games. Thus, I 
+            decided to filter out teams that had played fewer than half the average number of games played per team. The graph is therefore more useful, as it displays teams that have been successul over a
+            large number of games, rather than teams from nations taht may be too small to often play against teams on the world stage, who may only compete with other small nations. 
+            I chose to use a map, where each point on the map represents a country in the top 10 win percentages. Hovering over each point on the map displays the country name, win percent, and rank in the top ten.
+            Putting the information in a tooltip is more visually appealing, because text isn't crowded on the screen, while still providng the relevant information. Based on my results, Brazil has had the highest win 
+            percentage, followed by Spain, Germany, England, and Iran. The Czech Republic, Argentina, Croatia, Italy, and New Caledonia rounded out the top 10. </h4>
+    <center><h3 style="margin-left: 20px; margin-right: 20px; font-weight: bold">Written Questions: Using D3</h3></center>
+        <h4 style="margin-left: 20px; margin-right: 20px">d3 was very helpful because it allowed me to load in data very easily. It had many builtin functions to load different kinds of data files, such as csvs and json files,
+            and directly manipulate that data within the load-in function. d3 was also helpful because it made it very easy to customize a data point's style and content based on its information. This made making tooltips with 
+            relevant content very simple. Finally, d3 was helpful because it made it very trivial to display a graph on a webpage, by simply selecting an html element.</h4>
+        <h4 style="margin-left: 20px; margin-right: 20px">There are many reasons why one might not want to use d3. For example, one reason that d3 is very powerful is that it is very good for data-based visualizations. Not all 
+            visualizations make heavy use of data, however; some graphics are text/anecdote based and d3 might not be the best choice. Similarly, the visualizations created by d3 seem a bit simplistic, often using somewhat 
+            primitive shapes, so it may not be good for making very complex images. Finally, d3 might not be the best tool for creating a visualization if you don't want/need it to be on the web. It may be easier to create charts 
+            or graphs in a program like Excel if you have no need to display your visualization on a website. </h4>
+    <center><h3 style="margin-left: 20px; margin-right: 20px; font-weight: bold">Written Questions: Accessibility</h3></center>
+        <h4 style="margin-left: 20px; margin-right: 20px">One reason that my graphs are accessible is that -- as a result of using d3 -- they are all svg graphs, which "A Comprehensive Guide to Accessible Data Visualization" mentioned 
+            was more accessible than HTML images. The reading also mentioned that, while not all metrics of accessbility can be measured, one thing you can check is color contrast. I ran my webpage through an extension that checked for 
+            contrast to check whether it met accessibility standards, and learned that some of my colors were too light -- so I ended up making some elements darker. This makes the graphs more accessible to people with colorblindness/low vision. Many of 
+            my datapoints are also directly labelled, which may be more accessible to people using screenreaders. There are also many ways in which my graphs are not accessible, however. For example, the reading mentioned that datapoints that
+            rely on hovering are less accessible to people using screenreaders, but my map graph hides much of the data behind a hover due to the fact that it utilizes tooltips. It also suggested that elements on the page should use descriptive alt-text,
+            which my webpage also does not do. Additionally, although each graph has something resembling a "summary" at the bottom of the page due to the fact that I answered the first set of written questions, because these summaries are not near the 
+            graphs that they describe, they may be confusing/inaccessible. Some of the text on the page is also quite small, which may not be accessible to people with low vision. </h4>
+        <h4 style="margin-left: 20px; margin-right: 20px">One way that I could have made my graph more accessible is, when adding each component, I could have also taken the time to add alt-text to describe each element. I think the biggest barrier for me here /
+            the reason why I didn't end up doing this is that I simply did not know how to, due to the fact that I'm not super familiar with web design. When designing my map graph, in particular, I could have taken the time to try to find ways to display the 
+            the information without relying entirely on tooltips. I didn't do this because I felt that the graph was quite small, and I was afraid that it would get too crowded / become unreadable. I think the takeaway here is that there are tradeoffs in everything
+            we do: there may be a point where trying to make a graph accessible ends up making it entirely unreadable to all audiences, which is something to consider.</h4>
     <!--Feel free to add more JavaScript files as needed-->
     <script type="text/javascript" src="main.js"></script>
 </body>

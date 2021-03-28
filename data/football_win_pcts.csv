@@ -1,0 +1,313 @@
+year,count
+Scotland,0.47503201024327785
+England,0.5668979187314173
+Wales,0.3170731707317073
+Northern Ireland,0.2562111801242236
+United States,0.4298245614035088
+Canada,0.35170603674540685
+Uruguay,0.4321266968325792
+Argentina,0.536734693877551
+Austria,0.41516709511568123
+Hungary,0.4676724137931034
+Czechoslovakia,0.4475806451612903
+Belgium,0.43359375
+France,0.49642857142857144
+Switzerland,0.35131744040150564
+Netherlands,0.5076530612244898
+Germany,0.5848261327713382
+Sweden,0.4911591355599214
+Norway,0.3644278606965174
+Italy,0.52875
+Chile,0.3815789473684211
+Finland,0.2553763440860215
+Luxembourg,0.0845771144278607
+Catalonia,0
+Russia,0.5129682997118156
+Denmark,0.4477987421383648
+Brazil,0.6371049949031601
+Basque Country,0
+Japan,0.48165869218500795
+Philippines,0.2801724137931034
+Paraguay,0.35614525139664804
+Estonia,0.25481798715203424
+Provence,0
+Costa Rica,0.42549668874172186
+El Salvador,0.3333333333333333
+Guatemala,0.34841628959276016
+Yugoslavia,0.46458333333333335
+Poland,0.4306748466257669
+Spain,0.5850144092219021
+Portugal,0.4828711256117455
+Brittany,0
+Romania,0.43948126801152737
+New Zealand,0.40331491712707185
+Australia,0.49709864603481624
+Latvia,0.2875318066157761
+Galicia,0
+Central Spain,0
+Mexico,0.5051783659378596
+Andalusia,0
+Asturias,0
+China PR,0.4815436241610738
+Lithuania,0.27049180327868855
+Turkey,0.3880070546737213
+Aruba,0
+Curaçao,0.3674698795180723
+Bulgaria,0.37202380952380953
+Egypt,0.4889589905362776
+South Africa,0.4375
+Haiti,0.4142538975501114
+Jamaica,0.39184397163120566
+Republic of Ireland,0.38869257950530034
+Kenya,0.3767441860465116
+Uganda,0.42628205128205127
+Bolivia,0.2205240174672489
+Peru,0.32263242375601925
+Honduras,0.4077669902912621
+Guyana,0.3068181818181818
+Trinidad and Tobago,0.43609022556390975
+Belarus,0.304
+Ukraine,0.4606741573033708
+Barbados,0.33460076045627374
+Nicaragua,0.17419354838709677
+Greece,0.36879432624113473
+Martinique,0.45723684210526316
+Dominica,0.23626373626373626
+Silesia,0
+Cuba,0.34124629080118696
+Guadeloupe,0.4110169491525424
+Israel,0.34813084112149534
+Indonesia,0.37613019891500904
+Suriname,0.4396551724137931
+French Guiana,0.2929936305732484
+Saint Lucia,0.3316582914572864
+Ecuador,0.296875
+Colombia,0.3890909090909091
+Venezuela,0.24146981627296588
+Saint Kitts and Nevis,0.39664804469273746
+Grenada,0.3584905660377358
+India,0.3465346534653465
+Panama,0.308411214953271
+Slovakia,0.40893470790378006
+Manchukuo,0
+Croatia,0.5345911949685535
+Lebanon,0.27472527472527475
+Puerto Rico,0
+Afghanistan,0
+Iran,0.5450901803607214
+Mongolia,0
+Tanzania,0.2749529190207156
+Zimbabwe,0.4144736842105263
+Zambia,0.4568245125348189
+Iceland,0.31473214285714285
+Albania,0.25301204819277107
+Montenegro,0
+Madagascar,0.38288288288288286
+Mauritius,0.272
+Réunion,0
+Zanzibar,0.2
+Djibouti,0
+Ethiopia,0.36464088397790057
+DR Congo,0.3939393939393939
+South Korea,0.5266821345707656
+Vietnam,0.40594059405940597
+Macau,0
+Dominican Republic,0
+Cyprus,0.19060773480662985
+Sierra Leone,0.308300395256917
+Nigeria,0.4635416666666667
+Syria,0.3712871287128713
+Serbia,0.4509090909090909
+Chinese Taipei,0.2550335570469799
+Ghana,0.4766666666666667
+New Caledonia,0.5286343612334802
+Vanuatu,0.3218390804597701
+Fiji,0.43891402714932126
+Burma,0.44281524926686217
+Pakistan,0.2
+Sri Lanka,0.19900497512437812
+German DR,0.4697986577181208
+Tahiti,0.5190476190476191
+Gambia,0.2347417840375587
+Hong Kong,0.3264781491002571
+Singapore,0.302158273381295
+Malaysia,0.3488372093023256
+Guinea-Bissau,0.272108843537415
+Saarland,0
+Burundi,0.30851063829787234
+Kernow,0
+Cambodia,0.21333333333333335
+Thailand,0.37089201877934275
+Vietnam Republic,0.43137254901960786
+Kyrgyzstan,0.3013698630136986
+Moldova,0.19230769230769232
+North Vietnam,0
+Togo,0.3082901554404145
+North Korea,0.4235294117647059
+Sudan,0.3350125944584383
+Malta,0.11838790931989925
+Tunisia,0.41824440619621345
+Libya,0.3649851632047478
+Malawi,0.35168738898756663
+Morocco,0.4616822429906542
+Benin,0.22692307692307692
+Cape Verde,0.3493975903614458
+Cameroon,0.4344569288389513
+Central African Republic,0
+Mali,0.3967935871743487
+Gabon,0.34818941504178275
+Burkina Faso,0.3170103092783505
+Ivory Coast,0.49734513274336284
+Congo,0.344
+Iraq,0.45886654478976235
+Saint Vincent and the Grenadines,0.4383561643835616
+Senegal,0.44045368620037806
+Guinea,0.3626609442060086
+Algeria,0.42376237623762375
+Kuwait,0.42021276595744683
+Jordan,0.3494897959183674
+Papua New Guinea,0
+Solomon Islands,0.4235294117647059
+Liberia,0.27530364372469635
+Somalia,0
+Laos,0.1901840490797546
+Saudi Arabia,0.478330658105939
+Chad,0
+Bermuda,0.35526315789473684
+Niger,0.22926829268292684
+Bahrain,0.33537832310838445
+Palestine,0.26881720430107525
+Yemen,0.19911504424778761
+Wallis Islands and Futuna,0
+Corsica,0
+Mauritania,0.17452830188679244
+Western Australia,0
+Eswatini,0.2
+Botswana,0.26881720430107525
+Qatar,0.4146341463414634
+Lesotho,0.1814516129032258
+Bahamas,0
+Brunei,0
+Cook Islands,0
+Yemen DPR,0
+United Arab Emirates,0.39923224568138194
+Faroe Islands,0.17857142857142858
+Nepal,0.21348314606741572
+Antigua and Barbuda,0.3163265306122449
+Bangladesh,0.2403846153846154
+Seychelles,0
+Oman,0.3711111111111111
+Equatorial Guinea,0
+Mozambique,0.3256578947368421
+Guam,0
+Angola,0.34375
+São Tomé and Príncipe,0
+Rwanda,0.3360655737704918
+Northern Cyprus,0
+Armenia,0.24285714285714285
+Georgia,0.3029045643153527
+Azerbaijan,0.19183673469387755
+Kazakhstan,0.24242424242424243
+Tonga,0
+Kiribati,0
+Tuvalu,0
+Samoa,0
+Greenland,0
+Liechtenstein,0.07575757575757576
+Bhutan,0
+Niue,0
+American Samoa,0
+Belize,0
+Cayman Islands,0
+Anguilla,0
+British Virgin Islands,0
+Palau,0
+Sint Maarten,0
+Namibia,0.2663755458515284
+Ynys Môn,0
+Shetland,0
+Åland Islands,0
+Saint Martin,0
+San Marino,0.006134969325153374
+Montserrat,0
+Slovenia,0.3441295546558704
+Jersey,0
+Guernsey,0
+Isle of Wight,0
+Turkmenistan,0.37681159420289856
+Tajikistan,0.3958333333333333
+Uzbekistan,0.43636363636363634
+Eritrea,0
+Czech Republic,0.5387205387205387
+Gibraltar,0
+Isle of Man,0
+North Macedonia,0.2911392405063291
+Bosnia and Herzegovina,0.4
+Canary Islands,0
+Maldives,0.29559748427672955
+Andorra,0.036585365853658534
+Frøya,0
+Hitra,0
+U.S. Virgin Islands,0
+Northern Mariana Islands,0
+Turks and Caicos Islands,0
+Micronesia,0
+Gotland,0
+Saare County,0
+Rhodes,0
+Tibet,0
+Orkney,0
+Falkland Islands,0
+Monaco,0
+Mayotte,0
+Vatican City,0
+East Timor,0
+Alderney,0
+Sark,0
+Western Isles,0
+Kosovo,0
+Republic of St. Pauli,0
+Găgăuzia,0
+Crimea,0
+Occitania,0
+Sápmi,0
+Comoros,0
+Menorca,0
+Iraqi Kurdistan,0
+Padania,0
+Arameans Suryoye,0
+Gozo,0
+Two Sicilies,0
+Saint Pierre and Miquelon,0
+Bonaire,0
+Western Sahara,0
+Raetia,0
+Darfur,0
+Tamil Eelam,0
+South Sudan,0
+Abkhazia,0
+Artsakh,0
+Madrid,0
+Ellan Vannin,0
+South Ossetia,0
+County of Nice,0
+Székely Land,0
+Romani people,0
+Felvidék,0
+Chagos Islands,0
+Somaliland,0
+Western Armenia,0
+United Koreans in Japan,0
+Panjab,0
+Barawa,0
+Kárpátalja,0
+Yorkshire,0
+Surrey,0
+Cascadia,0
+Matabeleland,0
+Kabylia,0
+Timor-Leste,0
+Myanmar,0
+Parishes of Jersey,0
+Chameria,0
+Saint Helena,0
