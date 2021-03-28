@@ -219,7 +219,7 @@ d3.json("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/w
 // CSV files for data based on win percentage and RPI
 let filenames = ["data/wc_win_pcts.csv", "data/wc_rpi.csv"];
 
-// TODO: Set up SVG for graph 3
+// Set up SVG for graph 3
 let svg3 = d3.select("#graph3")
     .append("svg")
     .attr("width", graph_3_width)     
@@ -321,5 +321,5 @@ function setData(index, attr) {
 }
 
 
-// On page load, render the barplot with the artist data
+// On page load, render the barplot with win % data
 setData(0, "pct");
